@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="575dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="4">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:onClick="play"
+            android:shadowRadius="10"
+            android:tag="0"
+            android:text="Do You\nSpeak English!!"
+            android:textAlignment="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:text="Good Evening"
+            android:textAlignment="center"
+            android:tag="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:text="Hello"
+            android:textAlignment="center"
+            android:tag="2"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:text="How Are You"
+            android:tag="3"
+            android:textAlignment="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:text="I Live in....."
+            android:textAlignment="center"
+            android:tag="4"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:text="My Name is ....."
+            android:textAlignment="center"
+            android:tag="5"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:text="Please"
+            android:textAlignment="center"
+            android:tag="6"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_margin="10dp"
+            android:gravity="fill"
+            android:text="Welcome."
+            android:textAlignment="center"
+            android:tag="7"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:onClick="play"/>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="27dp"
+        android:gravity="center"
+        android:text="Basic Phrases"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+</androidx.constraintlayout.widget.ConstraintLayout>
