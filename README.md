@@ -2,34 +2,42 @@
 
 ### List of Apps Added in Order :-
 
-1.CurrencyConverted
+1. CurrencyConverted
 
-2.NumberShapeChecker
+2. NumberShapeChecker
 
-**3.HigherLowerGame**
+**3. HigherLowerGame**
 
-4.AnimateExample
+4. AnimateExample
 
-**5.Connect3Dots**
+**5. Connect3Dots**
 
-6.VideoPlaybackDemo
+6. VideoPlaybackDemo
 
-7.MusicPlayerDemo
+7. MusicPlayerDemo
 
-**8.BasicPhrases**
+**8. BasicPhrases**
 
-9.ListViewDemo
+9. ListViewDemo
 
-**10.NumberTable**
+**10. NumberTable**
 
-11.Timer Demo
+11. Timer Demo
 
-**12.Egg Timer.**
+**12. Egg Timer.**
 
-**13.Brain Trainer**
+**13. Brain Trainer**
 
-14.DownloadingWebContent
+14. DownloadingWebContent
 
-15.Downloading Images
+15. Downloading Images
 
-**16.Guess Celebrity Game App.**
+**16.Guess Celebrity Game App.** (Incomplete)
+
+17. JSON Demo
+
+18. Whats the Weather.
+
+19. MapDemo
+
+20. Location Demo.

@@ -24,5 +24,6 @@ public class MainActivity extends AppCompatActivity {
         VV.setMediaController(mediaControl);
 
         VV.start();
+
     }
 }

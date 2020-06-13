@@ -24,6 +24,13 @@ public class MainActivity extends AppCompatActivity {
     public void stop(View view){
 
         mp.pause();
+
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                hand
+            }
+        }
     }
 
 
