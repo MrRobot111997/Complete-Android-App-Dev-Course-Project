@@ -68,7 +68,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void onLocationChanged(Location location) {
                 LatLng cord = new LatLng(location.getLatitude(), location.getLongitude());
                 mMap.addMarker(new MarkerOptions().position(cord).title("You're Here"));
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cord , 1));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cord , 1  ));
 
             }
 
