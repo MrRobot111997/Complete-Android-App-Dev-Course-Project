@@ -51,3 +51,20 @@
 24. Menu Demo
 
 25. Simple Notes
+
+26. Database Demo
+
+27. WebView Demo
+
+**28. News Reader**
+
+29. Parse Server Starter Project
+
+**30. Instagram Clone**
+
+31. Camera Demo
+
+32. Bluetooth Demo
+
+**33. Coin Man (Game)**
+
