@@ -68,3 +68,25 @@
 
 **33. Coin Man (Game)**
 
+34. AndroidWearDemo
+
+**35. SnapchatClone**
+
+**36. TwitterClone**
+    
+37. WearListDemo
+
+38. WearNotificationDemo
+
+39. WearPeopleCounter
+
+40. WearVoiceInput
+
+41. WearWatchFaceDemo
+
+42. WearandPhoneCompanionDisplay
+
+**43. UberClone**
+
+Example Project :-
+arcore-android-sdk-master/
