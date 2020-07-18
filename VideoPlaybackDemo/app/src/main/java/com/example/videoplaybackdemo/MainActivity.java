@@ -3,7 +3,9 @@ package com.example.videoplaybackdemo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.MediaController;
+import android.widget.Toast;
 import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,7 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
         VideoView VV = (VideoView) findViewById(R.id.videoView);
 
-        VV.setVideoPath("android.resource://"+getPackageName()+"/"+(R.raw.video));
+        VV.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.video);
+
+        Toast.makeText(this, "android.resource://" + getPackageName() + "/" + R.raw.video , Toast.LENGTH_LONG).show();
+        Log.i("Address" , "android.resource://" + getPackageName() + "/" + R.raw.video  );
 
         MediaController mediaControl = new MediaController(this);
 

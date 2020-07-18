@@ -1,28 +1,21 @@
 package com.example.coinman.game;
 
-
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputAdapter;
 import com.badlogic.gdx.audio.Music;
-import com.badlogic.gdx.audio.Sound;
-import com.badlogic.gdx.files.FileHandle;
+
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.GL20;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.Gdx2DPixmap;
+
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Intersector;
 import com.badlogic.gdx.math.Rectangle;
-import com.badlogic.gdx.scenes.scene2d.Event;
-import com.badlogic.gdx.scenes.scene2d.EventListener;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.jar.Attributes;
-
 
 public class CoinMan extends ApplicationAdapter {
 	SpriteBatch batch;
@@ -38,7 +31,7 @@ public class CoinMan extends ApplicationAdapter {
 	ArrayList<Integer> coinsYs = new ArrayList<>() ;
 	ArrayList<Rectangle> coinRectangles = new ArrayList<>() ;
 	int coinCount = 0 ;
-	int coinSpeed = 4 ;
+	int coinSpeed = 6 ;
 	Texture coin ;
 
 	ArrayList<Integer> bombXs = new ArrayList<>() ;
@@ -46,7 +39,7 @@ public class CoinMan extends ApplicationAdapter {
 	ArrayList<Rectangle> bombRectangles = new ArrayList<>() ;
 	Texture bomb ;
 	int bombCount = 0 ;
-	int bombSpeed = 8 ;
+	int bombSpeed = 9 ;
 
 	int score = 0 ;
 	int highScore = 0 ;
@@ -60,7 +53,6 @@ public class CoinMan extends ApplicationAdapter {
 	Music music , deadmusic;
 	Texture musicOn , musicOff ;
 	boolean soundState ;
-	Image audio ;
 
 
 	@Override
@@ -97,15 +89,8 @@ public class CoinMan extends ApplicationAdapter {
 		musicOff = new Texture("soundoff.png") ;
 
 		soundState = preferences.getMusicState() ;
-		audio = new Image(musicOn);
-		audio.addListener(new EventListener() {
-			@Override
-			public boolean handle(Event event) {
-				soundState = false ;
-				Gdx.app.log("Listener" , "Pressed" );
-				return false;
-			}
-		}) ;
+
+
 		music = Gdx.audio.newMusic(Gdx.files.internal("backmusic.mp3")) ;
 		music.setLooping(true);
 
@@ -219,13 +204,13 @@ public class CoinMan extends ApplicationAdapter {
 				coinsXs.clear();
 				coinsYs.clear();
 				coinCount = 0;
-				coinSpeed = 4 ;
+				coinSpeed = 6 ;
 				bombRectangles.clear();
 				bombXs.clear();
 				bombYs.clear();
 				bombRectangles.clear();
 				bombCount = 0;
-				bombSpeed = 8 ;
+				bombSpeed = 9 ;
 				highScore = preferences.getHighScore() ;
 				music.play();
 			}
@@ -241,10 +226,10 @@ public class CoinMan extends ApplicationAdapter {
 		manRectangle = new Rectangle( Gdx.graphics.getWidth()/2 - man[manState].getWidth()/2 , manY , man[manState].getWidth() , man[manState].getHeight() ) ;
 
 		if( soundState ){
-			batch.draw( musicOn , 100 , Gdx.graphics.getHeight() - 200 );
+			batch.draw( musicOn , 75 , Gdx.graphics.getHeight() - 200 );
 		}
 		else{
-			batch.draw( musicOff , 100 , Gdx.graphics.getHeight() - 200 );
+			batch.draw( musicOff , 75 , Gdx.graphics.getHeight() - 200 );
 		}
 
 
@@ -272,8 +257,8 @@ public class CoinMan extends ApplicationAdapter {
 			}
 		}
 
-		scoreFont.draw( batch , String.valueOf(score) , 100 , 200 );
-		highFont.draw( batch , String.valueOf(highScore) , Gdx.graphics.getWidth()-260, 200) ;
+		scoreFont.draw( batch , String.valueOf(score) , 75 , 200 );
+		highFont.draw( batch , String.valueOf(highScore) , Gdx.graphics.getWidth()-280, 200) ;
 
 		batch.end();
 

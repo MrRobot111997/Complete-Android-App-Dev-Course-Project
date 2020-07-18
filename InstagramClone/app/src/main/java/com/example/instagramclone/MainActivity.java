@@ -1,4 +1,4 @@
-package com.example.instagramclone;
+ package com.example.instagramclone;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;

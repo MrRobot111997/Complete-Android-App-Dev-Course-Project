@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         TextView tV = (TextView) findViewById(R.id.textView3);
 
         if (eT.getText().toString().equals("")) {
-            Toast.makeText(this, "The Input Must Be Valid", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "The Input Must Be Valid", Toast.LENGTH_SHORT).show();
         } else {
             int num = Integer.parseInt(eT.getText().toString());
 
